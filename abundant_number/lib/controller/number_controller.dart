@@ -8,6 +8,10 @@ class NumberController{
 
     final n1 = int.parse(n);
 
+    if(n1 < 1){
+      return "Enter a number greater than 0";
+    }
+
     final num = Number(n1);
     final total = num.calcutaleAbundant();
 
